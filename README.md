@@ -154,8 +154,10 @@ EOF  all  create  destroy  help  quit  show  update
 No known bugs at this time. 
 
 ## Authors
-Auwal Abdulmalik - https://github.com/Amkeez252   
-Adewumi Kafilat - https://github.com/DevKaffy
+Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
+Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+Auwal Abdulmalik -[Github](https://github.com/Amkeez252)   
+Adewumi Kafilat - [Github](https://github.com/DevKaffy) / [Twitter](https://twitter.com/adewumi_kafilat)
 
 ## License
 Public Domain. No copy write protection. 
