@@ -159,5 +159,6 @@ Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://tw
 Auwal Abdulmalik -[Github](https://github.com/Amkeez252)   
 Adewumi Kafilat - [Github](https://github.com/DevKaffy) / [Twitter](https://twitter.com/adewumi_kafilat)
 
+Second part of Airbnb: Joann Vuong, Auwal Abdulmalik and Adewumi Kafilat
 ## License
 Public Domain. No copy write protection. 
