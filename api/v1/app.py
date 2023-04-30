@@ -16,25 +16,29 @@ app.register_blueprint(app_views)
 cors = CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
 
 
-
-
-
 @app.teardown_appcontext
-def close_db_sesion(error):
-    """ this for slash routing"""
+def close_db(error):
+    """ Close Storage """
     storage.close()
 
 
 @app.errorhandler(404)
-def page_not_found(e):
-    """handler for 404 errors that returns a JSON-formatted
-    404 status code response.
+def not_found(error):
+    """ 404 Error
+    ---
+    responses:
+      404:
+        description: a resource was not found
     """
-    return ({'error': 'Not found'}), 404
+    return make_response(jsonify({'error': "Not found"}), 404)
 
 
 if __name__ == "__main__":
-    HBNB_API_HOST = getenv('HBNB_API_HOST')
-    HBNB_API_PORT = getenv('HBNB_API_PORT')
-    app.run(host=HBNB_API_HOST, port=HBNB_API_PORT,
-            threaded=True, debug=True)
+    """ Main Function """
+    host = environ.get('HBNB_API_HOST')
+    port = environ.get('HBNB_API_PORT')
+    if not host:
+        host = '0.0.0.0'
+    if not port:
+        port = '5000'
+    app.run(host=host, port=port, threaded=True)
