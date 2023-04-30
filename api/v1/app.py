@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+
 """
-Created on Tue Sep  1 14:42:23 2020
-@authors: Robinson Montes
-          Mauricio Olarte
+Created for app.py
+@author; Auwal Abdulmalik 
+
 """
 from os import getenv
 from flask import Flask, jsonify, Blueprint
@@ -12,9 +12,11 @@ from api.v1.views import app_views
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins="0.0.0.0")
 app.register_blueprint(app_views)
-CORS(app_views)
+cors = CORS(app, resources={r"/*": {"origins": "0.0.0.0"}})
+
+
+
 
 
 @app.teardown_appcontext
