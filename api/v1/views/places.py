@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Created by Auwal Abdulmalik on 
-a Colaboration projec with kafilat
+Created on Tue Sep  1 14:42:23 2020
+@authors: Robinson Montes
+          Mauricio Olarte
 """
 from flask import Blueprint, jsonify, request, abort
 from api.v1.views import app_views
